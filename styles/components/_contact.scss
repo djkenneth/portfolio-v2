@@ -1,0 +1,45 @@
+.contact {
+	position: relative;
+	margin: 8rem auto;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	gap: 10rem;
+	// justify-content: space-around;
+	// background-color: red;
+	&__img {
+		// margin: 0 auto;
+		min-width: 280px;
+		max-width: 280px;
+		align-self: flex-end;
+		@include respond(phone) {
+			display: none;
+		}
+	}
+	@include respond(phone) {
+		margin: 0 0 16rem 0;
+	}
+	.card {
+		padding-top: 2.4rem;
+		padding-bottom: 2.4rem;
+		width: 40%;
+
+		@include respond(phone) {
+			width: 100%;
+		}
+	}
+
+	h2 {
+		margin-bottom: 2.4rem;
+	}
+
+	.triangle2 {
+		bottom: -10%;
+		right: 41%;
+	}
+
+	.triangle {
+		bottom: -10%;
+		right: 40%;
+	}
+}
