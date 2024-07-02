@@ -1,9 +1,13 @@
+'use client'
+
 import useAnimateWhenViewed from "../../src/hooks/useAnimateWhenViewed";
 import { motion } from "framer-motion";
 import { sectionVariants } from "../../src/utils/animationVariants";
 import SectionHeading from "../SectionHeading";
 import ProjectItem from "../ProjectItem";
-export default function ProjectSection({ projects }) {
+
+import { Project } from "../../app/page";
+export default function ProjectSection({ projects }: { projects: Project[] }) {
 	const [ref, controls] = useAnimateWhenViewed(-250);
 	return (
 		<motion.section
@@ -11,8 +15,8 @@ export default function ProjectSection({ projects }) {
 			id="projects"
 			variants={sectionVariants}
 			initial="hidden"
-			animate={controls}
-			ref={ref}
+			animate={controls as any}
+			ref={ref as any}
 		>
 			<SectionHeading
 				title="noteworthy projects"
@@ -20,7 +24,7 @@ export default function ProjectSection({ projects }) {
 			/>
 
 			<div className="card__list">
-				{projects.map((project, index) => (
+				{projects.map((project: Project, index: number) => (
 					<ProjectItem project={project} key={index.toString()} />
 				))}
 			</div>

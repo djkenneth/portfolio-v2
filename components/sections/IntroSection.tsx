@@ -1,3 +1,5 @@
+"use client"
+
 import { FiGithub, FiLinkedin, FiTwitter, FiGitlab } from "react-icons/fi";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -8,17 +10,17 @@ import {
 	slideUp,
 	fadeIn,
 } from "../../src/utils/animationVariants";
-import Button from "../Button";
+// import Button from "../Button";
 
-export default function IntroSection() {
+export function IntroSection() {
 	const one = (
 		<h4 className="intro__subtitle heading__4">
-			Hello, they call me Eugene.
+			Hello, they call me Kenneth.
 		</h4>
 	);
 	const two = (
 		<h1 className="intro__title heading__1">
-			I <span>design</span> and <span>develop</span> things for the web.
+			I <span>develop</span> things for the web.
 		</h1>
 	);
 
@@ -57,7 +59,7 @@ export default function IntroSection() {
 					</motion.div>
 				))}
 
-				<motion.div className="intro__actions" variants={slideUp}>
+				{/* <motion.div className="intro__actions" variants={slideUp}>
 					<Button
 						href="#projects"
 						className="btn btn__primary"
@@ -90,7 +92,7 @@ export default function IntroSection() {
 							text={<FiTwitter />}
 						/>
 					</div>
-				</motion.div>
+				</motion.div> */}
 			</div>
 
 			<motion.div className="triangle" variants={fadeIn}>

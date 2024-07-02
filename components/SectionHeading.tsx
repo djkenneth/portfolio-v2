@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { slideUp } from "../src/utils/animationVariants";
-export default function SectionHeading({ title, subtitle }) {
+export default function SectionHeading({ title, subtitle }: { title: string, subtitle: string }) {
 	return (
 		<motion.div className="section__heading" variants={slideUp}>
 			<h2 className="heading__2">{title}</h2>

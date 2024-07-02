@@ -1,8 +1,10 @@
+"use client"
+
 import { useEffect } from 'react';
 import { useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
-const useScrollReveal = (rootMargin) => {
+const useScrollReveal = (rootMargin: number) => {
 	const { ref, inView } = useInView({
 		triggerOnce: true,
 		root: null,

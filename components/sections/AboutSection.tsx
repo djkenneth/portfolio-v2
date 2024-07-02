@@ -1,3 +1,5 @@
+'use client'
+
 import { FiGithub, FiLinkedin, FiTwitter, FiGitlab } from "react-icons/fi";
 import Image from "next/image";
 
@@ -35,7 +37,7 @@ const AboutSection = () => {
 				</div>
 				<div className="card__content">
 					<h4 className="heading__2">about</h4>
-					<h5 htmlFor="" className="heading__5">
+					<h5 className="heading__5">
 						what i love to do?
 					</h5>
 

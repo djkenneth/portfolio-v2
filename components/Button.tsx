@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-export default function Button({ href, className, text, target }) {
+export default function Button({ href, className, text, target }: any) {
 	return (
-		<Link href={href}>
+		<Link href={href} passHref legacyBehavior>
 			<motion.a
 				href={href}
 				className={className}

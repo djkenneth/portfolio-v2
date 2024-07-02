@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import { slideUp } from "../src/utils/animationVariants";
+import { Experieces } from "../app/page";
 
-const ExperienceItem = ({ experiece }) => {
+const ExperienceItem = ({ experiece }: { experiece: Experieces }) => {
 	const { title, position, body } = experiece;
 	return (
 		<motion.div className="experience__item" variants={slideUp}>

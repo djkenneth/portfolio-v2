@@ -1,10 +1,14 @@
+'use client'
+
 import useAnimateWhenViewed from "../../src/hooks/useAnimateWhenViewed";
 import { motion } from "framer-motion";
 import { sectionVariants } from "../../src/utils/animationVariants";
 import SectionHeading from "../SectionHeading";
 import ExperienceItem from "../ExperienceItem";
 
-export default function ExperieceSection({ experieces }) {
+import { Experieces } from "../../app/page";
+
+export default function ExperieceSection({ experieces }: { experieces: Experieces[] }) {
 	const [ref, controls] = useAnimateWhenViewed(-250);
 	return (
 		<motion.section
@@ -12,8 +16,8 @@ export default function ExperieceSection({ experieces }) {
 			id="experiences"
 			variants={sectionVariants}
 			initial="hidden"
-			animate={controls}
-			ref={ref}
+			animate={controls as any}
+			ref={ref as any}
 		>
 			<SectionHeading title="experiences" subtitle="what i have done?" />
 
