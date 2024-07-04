@@ -43,25 +43,24 @@ const AboutSection = () => {
 
 					<p className="card__body">
 						{
-							"Eugene is a front-end developer, designer, and mentor. He’s currently a software engineer, focused on building microservices applications like payroll enterprise cloud (PEC). "
+							"I am Kenneth Ivan P. Pineda, a dedicated web developer with a passion for creating efficient and innovative solutions. With a background at Fullstack HQ from June 2021 to April 2024, I have honed my skills in converting UI/UX designs into fully functional websites using modern technologies such as JavaScript, React.js, Next.js, TypeScript, and various CMS platforms. My expertise extends to ensuring responsive design, cross-browser compatibility, and seamless integration with front-end and third-party services."
 						}
 						<br />
 						<br />
 						{
-							"	Moreover, he created PelikulaPH an application for movie lovers like him, and an automated monitoring system. He loves to help aspirant developers not only to push them to become a developer but to learn from them as well, in his free time he enjoys devising a game and accumulating an understanding of new web tech trends."
+							"	I thrive in collaborative environments and am committed to continuous learning and improvement. My strengths lie in critical thinking, problem-solving, and adaptability, allowing me to handle tasks independently or as part of a team. I am motivated by the desire to contribute to both personal and organizational growth, leveraging my programming skills to drive success and create exceptional user experiences."
 						}
 					</p>
 				</div>
 
 				<div className="tags">
-					<span className="tag">$mentoring</span>
 					<span className="tag">$coding</span>
 					<span className="tag">$learning</span>
 					<span className="tag">$goals</span>
 				</div>
 			</div>
 
-			<div className="about__gallery">
+			{/* <div className="about__gallery">
 				<div className="about__thumbnail">
 					<Image src="/images/about.jpg" alt="" layout="fill" />
 				</div>
@@ -84,7 +83,7 @@ const AboutSection = () => {
 				<div className="about__thumbnail">
 					<Image src="/images/about4.jpg" alt="" layout="fill" />
 				</div>
-			</div>
+			</div> */}
 		</section>
 	);
 };

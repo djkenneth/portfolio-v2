@@ -29,15 +29,15 @@ export interface Experieces {
 
 const projects = [
 	{
-		title: 'sdkfhjksdhfdsf',
-		subtitle: 'sdkfhjksdhfdsf',
-		body: 'sdkfhjksdhfdsf',
-		tools: ['sdkfhjksdhfdsf', 'alskdhkjashd'],
-		github: 'sdkfhjksdhfdsf',
-		website: 'sdkfhjksdhfdsf',
+		title: 'PC Link',
+		subtitle: 'E-Commerce Game Tech Store',
+		body: 'PC Link is a E-commerce website, a computer components store and my finals project in Human-Computer Interaction developed with Vuejs and Vuetify',
+		tools: ['Javascript', 'Vuejs', 'Vuetify'],
+		github: 'https://github.com/djkenneth/pclink-ecommerce',
+		website: 'https://pclinkshop.netlify.app/',
 		image: {
-			url: 'https://images.pexels.com/photos/1716861/pexels-photo-1716861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-			title: 'asjdhjaksd',
+			url: '/images/projects/project-section-2.jpg',
+			title: 'game-tech-store',
 			width: 1980,
 			height: 800
 		}
@@ -57,8 +57,8 @@ export default function Page() {
         <>
             <IntroSection />
             <FeaturedSection projects={projects as Project[]} />
-            <ProjectSection projects={projects as Project[]} />
-            <ExperieceSection experieces={experieces as Experieces[]} />
+            {/* <ProjectSection projects={projects as Project[]} /> */}
+            {/* <ExperieceSection experieces={experieces as Experieces[]} /> */}
             <AboutSection />
         </>
     )

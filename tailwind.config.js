@@ -1,3 +1,5 @@
+import { fontFamily } from './theme/typography'
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -6,6 +8,7 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily,
     extend: {},
   },
   plugins: [],
