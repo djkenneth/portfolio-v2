@@ -15,7 +15,7 @@ const Navbar = () => {
 
 	const navbarItems = [
 		'#home',
-		'#projects',
+		'#featured',
 		'#experiences',
 		'#about',
 		'#contact',

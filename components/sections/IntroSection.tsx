@@ -19,7 +19,7 @@ export function IntroSection() {
 		</h4>
 	);
 	const two = (
-		<h1 className="text-[6.2rem] leading-[120%] tracking-[2px] text-shadow-[var(--text-shadow)] mb-[5rem] md:text-[5.8rem]">
+		<h1 className="text-[6.4rem] font-bold leading-[120%] tracking-[2px] text-shadow-[var(--text-shadow)] mb-[5rem] md:text-[7rem]">
 			I <span className="text-[var(--accent)]">develop</span> things for the web.
 		</h1>
 	);
