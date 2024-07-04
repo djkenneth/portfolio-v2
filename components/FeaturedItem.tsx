@@ -24,9 +24,9 @@ const FeaturedItem = ({ featuredProject }: { featuredProject: Project }) => {
 				)}
 			</div>
 				<div className="featured__content">
-					<h2 className="heading__2">{title}</h2>
-					<h5 className="heading__5">{subtitle}</h5>
-					<p className="">{body}</p>
+					<h2 className="heading__2 mb-7 mt-7 md:mt-0">{title}</h2>
+					<h5 className="heading__5 mb-7">{subtitle}</h5>
+					<p className="mb-7">{body}</p>
 
 					<div className="tags">
 						{tools.map((tag) => (
