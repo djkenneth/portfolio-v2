@@ -110,13 +110,13 @@ const Navbar = () => {
 					</ul>
 				</nav>
 				<motion.button
-					className="border-0 bg-transparent text-[#00331a] font-[2.6rem] cursor-pointer flex items-center ml-[2.4rem]"
+					className="border-0 bg-transparent cursor-pointer flex items-center ml-[2.4rem]"
 					onClick={() => {
 						toggleDarkMode();
 					}}
 					variants={slideDown}
 				>
-					{isDark == 'dark' ? <RiSunLine /> : <RiMoonClearLine />}
+					{isDark == 'dark' ? <RiSunLine size={25} /> : <RiMoonClearLine size={25} />}
 				</motion.button>
 			</motion.div>
 		</header>
