@@ -29,6 +29,20 @@ export interface Experieces {
 
 const featuredProjects = [
 	{
+		title: 'Casecobra E-commerce shop',
+		subtitle: 'E-Commerce Case shop',
+		body: 'CaseCobra - A Modern Fullstack E-Commerce Shop for Custom Phone Cases',
+		tools: ['Javascript', 'Next.js 14', 'TypeScript', 'Tailwind', 'Stripe', 'Kinde Auth'],
+		github: 'https://github.com/djkenneth/casecobra',
+		website: 'https://casecobra-gold.vercel.app',
+		image: {
+			url: '/images/projects/project-section-5.jpg',
+			title: 'phone-case-shop',
+			width: 1980,
+			height: 800
+		}
+	},
+	{
 		title: 'PC Link',
 		subtitle: 'E-Commerce Game Tech Store',
 		body: 'PC Link is a E-commerce website, a computer components store and my finals project in Human-Computer Interaction developed with Vuejs and Vuetify',
@@ -87,6 +101,20 @@ const featuredProjects = [
 ]
 
 const noteWorthyProjects = [
+	{
+		title: 'Casecobra E-commerce shop',
+		subtitle: 'E-Commerce Case shop',
+		body: 'CaseCobra - A Modern Fullstack E-Commerce Shop for Custom Phone Cases',
+		tools: ['Javascript', 'Next.js 14', 'TypeScript', 'Tailwind', 'Stripe', 'Kinde Auth'],
+		github: 'https://github.com/djkenneth/casecobra',
+		website: 'https://casecobra-gold.vercel.app',
+		image: {
+			url: '/images/projects/project-section-5.jpg',
+			title: 'phone-case-shop',
+			width: 1980,
+			height: 800
+		}
+	},
 	{
 		title: 'PC Link',
 		subtitle: 'E-Commerce Game Tech Store',
