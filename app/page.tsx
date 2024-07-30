@@ -36,7 +36,7 @@ const featuredProjects = [
 		github: 'https://github.com/djkenneth/casecobra',
 		website: 'https://casecobra-gold.vercel.app',
 		image: {
-			url: '/images/projects/project-section-5.jpg',
+			url: '/images/projects/project-section-5.png',
 			title: 'phone-case-shop',
 			width: 1980,
 			height: 800
@@ -109,7 +109,7 @@ const noteWorthyProjects = [
 		github: 'https://github.com/djkenneth/casecobra',
 		website: 'https://casecobra-gold.vercel.app',
 		image: {
-			url: '/images/projects/project-section-5.jpg',
+			url: '/images/projects/project-section-5.png',
 			title: 'phone-case-shop',
 			width: 1980,
 			height: 800
