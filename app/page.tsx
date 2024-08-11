@@ -29,6 +29,20 @@ export interface Experieces {
 
 const featuredProjects = [
 	{
+		title: 'Solute - Technology & IT Solutions',
+		subtitle: 'Solute is a landing page',
+		body: 'Solute is a modern and professional WordPress theme designed for technology and solution-based businesses.',
+		tools: ['HTML', 'CSS' ,'Wordpress', 'Shortcodes', 'ACF', 'Tailwind', 'Vanilla Javascript', 'JQuery'],
+		github: '',
+		website: 'https://dev-solute-kenneth.pantheonsite.io/',
+		image: {
+			url: '/images/projects/project-section-6.jpg',
+			title: 'solute',
+			width: 1980,
+			height: 800
+		}
+	},
+	{
 		title: 'Casecobra E-commerce shop',
 		subtitle: 'E-Commerce Case shop',
 		body: 'CaseCobra - A Modern Fullstack E-Commerce Shop for Custom Phone Cases',
