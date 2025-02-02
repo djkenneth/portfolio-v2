@@ -1,14 +1,10 @@
 "use client"
 
-import { FiGithub, FiLinkedin, FiTwitter, FiGitlab } from "react-icons/fi";
-import Image from "next/image";
 import { motion } from "framer-motion";
+import { FiGithub, FiLinkedin } from "react-icons/fi";
 import {
 	IntroSectionVariants,
-	springRTL,
-	springLTR,
-	slideUp,
-	fadeIn,
+	slideUp
 } from "../../src/utils/animationVariants";
 import Button from "../Button";
 
@@ -19,12 +15,18 @@ export function IntroSection() {
 		</h4>
 	);
 	const two = (
-		<h1 className="text-[6.4rem] font-bold leading-[120%] tracking-[2px] text-shadow-[var(--text-shadow)] mb-[5rem] md:text-[7rem]">
+		<h1 className="text-[6.4rem] font-bold leading-[120%] tracking-[2px] text-shadow-[var(--text-shadow)] md:text-[7rem]">
 			I <span className="text-[var(--accent)]">develop</span> things for the web.
 		</h1>
 	);
 
-	const introTexts = [one, two];
+	const three = (
+		<h4 className="text-[2rem] font-[600] mb-[5rem] font-cascadia-code">
+            Full-stack developer specializing in building exceptional digital experiences
+        </h4>
+	);
+
+	const introTexts = [one, two, three];
 
 	return (
 		<motion.section
@@ -34,24 +36,6 @@ export function IntroSection() {
 			initial="hidden"
 			animate="visible"
 		>
-			{/* <div className="rectangle">&nbsp;</div> */}
-
-			{/* <motion.div
-				className="min-w-[280px] max-w-[280px] rotate-[-12deg] hidden md:block hover:rotate-0"
-				variants={springLTR}
-				whileHover={{
-					rotateZ: "-20deg",
-				}}
-			>
-				<Image
-					src="/images/me.png"
-					alt=""
-					width={350}
-					height={396}
-					priority
-					quality={100}
-				/>
-			</motion.div> */}
 			<div className="flex-1">
 				{introTexts.map((text, i) => (
 					<motion.div variants={slideUp} key={i}>
@@ -82,17 +66,6 @@ export function IntroSection() {
 					</div>
 				</motion.div>
 			</div>
-
-			{/* <motion.div
-			className="triangle" 
-			variants={fadeIn}>
-				&nbsp;
-			</motion.div>
-			<motion.div 
-			className="triangle2" 
-			variants={fadeIn}>
-				&nbsp;
-			</motion.div> */}
 		</motion.section>
 	);
 }
